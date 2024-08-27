@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/gown.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/gown.png" alt="">
+        <span class="d-none d-lg-block">Niel Atelier</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/boy.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Niel Atelier
+            </span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Niel Atelier</h6>
+              <span>Administrator</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+  </header><!-- End Header -->
+
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="gowns.html">
+          <i class="bi bi-person"></i>
+          <span>Gowns</span>
+          <span class="badge bg-success badge-number">3</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pending.html">
+          <i class="bi bi-question-circle"></i>
+          <span>Pending</span>
+          <span class="badge bg-danger badge-number">4</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link" href="borrowed-gown.html">
+          <i class="bi bi-envelope"></i>
+          <span>Borrowed Gown</span>
+          <span class="badge bg-primary badge-number">5</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="sales.html">
+          <i class="bi bi-card-list"></i>
+          <span>Sales</span>
+        </a>
+      </li><!-- End Register Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="accounts.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Accounts</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Welcome, Admin!</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Borrowed</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <div class="container mt-4">
+      <div class="pending-search-container">
+        <!-- Pending Title -->
+        <h2 class="mb-0">Borrowed Gown</h2>
+
+        <!-- Search Bar -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="container mt-4">
+        <div class="table-container">
+          <table class="table table-striped table-responsive">
+            <thead>
+              <tr class="table-head">
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Address</th>
+                <th>Gown Code</th>
+                <th>Gown Name</th>
+                <th>Price</th>
+                <th class="text-center">No of Days</th>
+                <th>Penalty</th>
+                <th>Partial Payment</th>
+                <th>Total Amount</th>
+                <th class="text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-row">
+                <td>001</td>
+                <td>Ryan Miano</td>
+                <td>Camolinas,Cordova</td>
+                <td>0012</td>
+                <td>Rosas Gown</td>
+                <td>400 per day</td>
+                <td>10</td>
+                <td>3days</td>
+                <td>P1,300</td>
+                <td>P4,300</td>
+                <td class="text-center">
+                  <div class="borrowed-buttons">
+                    <button class="btn btn-success">Pay</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#downPaymentModal">
+                      Down Payment
+                    </button>
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#viewModal">
+                      View
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td>001</td>
+                <td>Ryan Miano</td>
+                <td>Camolinas,Cordova</td>
+                <td>0012</td>
+                <td>Rosas Gown</td>
+                <td>400 per day</td>
+                <td>10</td>
+                <td>3days</td>
+                <td>P1,300</td>
+                <td>P4,300</td>
+                <td class="text-center">
+                  <div class="borrowed-buttons">
+                    <button class="btn btn-success">Pay</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#downPaymentModal">
+                      Down Payment
+                    </button>
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#viewModal">
+                      View
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td>001</td>
+                <td>Ryan Miano</td>
+                <td>Camolinas,Cordova</td>
+                <td>0012</td>
+                <td>Rosas Gown</td>
+                <td>400 per day</td>
+                <td>10</td>
+                <td>3days</td>
+                <td>P1,300</td>
+                <td>P4,300</td>
+                <td class="text-center">
+                  <div class="borrowed-buttons">
+                    <button class="btn btn-success">Pay</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#downPaymentModal">
+                      Down Payment
+                    </button>
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#viewModal">
+                      View
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <!-- Additional rows can be added here -->
+            </tbody>
+          </table>
+        </div>
+
+        <section>
+          <!-- Disabled and active states -->
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav><!-- End Disabled and active states -->
+
+          <!-- modal code for view btn -->
+          <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Content goes here -->
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="row invoice-header">
+                          <div class="col-md-6">
+                            <Strong class="invoice-title">Rent Receipt</Strong>
+                          </div>
+                          <div class="col-md-6 text-md-end">
+                            <button onclick="window.print()">Print this</button>
+
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <address>
+                              <ul class="head">
+                                <li>NIEL'S ATELIER</li>
+                                <li>educniel123@gmail.com</li>
+                                <li>0950 481 2889</li>
+                              </ul>
+                            </address>
+                          </div>
+                          <div class="col-xs-6 text-right item-modal">
+                            <address>
+                              <strong>Customer Information:</strong>
+                              <ul>
+                                <li>Name: Ryan Claire Miano</li>
+                                <li>Address: Camolinas,Cordova</li>
+                                <li>Phone Number: 09323232344</li>
+                                <li> Email: ryanclaire@gmail.com</li>
+                              </ul>
+                            </address>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <address class="item-modal">
+                              <strong>Item Details:</strong>
+                              <ul>
+                                <li>Gown Name: Black Gown</li>
+                                <li>Rental Period: 12/02/24 to 12/7/25</li>
+                                <li>Rental Price: P500</li>
+                                <li>DownPayment: P1,300</li>
+                              </ul>
+                            </address>
+                          </div>
+                          <div class="col-xs-6 text-right modal-balance">
+                            <h5>Quantity: 3</h5>
+                          </div>
+                          <div class="col-xs-6 text-right modal-balance">
+                            <h4>Total Amount P4,300</h4>
+                          </div>
+                          <div class="col-xs-6 text-right modal-balance">
+                            <h2>Balance: P300</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 footer-modal">
+                        <p>Thank you for choosing Niel's Atelier for your gown rental service. <br>
+                          Please keep this Receipt for your records.
+                        </p>
+                        <p>For any inquiries or assistance, please contact us at 0950481 or educniel123@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- modal code for borrowed-gown>downpaymentbtn -->
+          <div class="modal fade" id="downPaymentModal" tabindex="-1" aria-labelledby="downPaymentModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="downPaymentModalLabel">Partial Payment</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="downPaymentAmount" class="form-label">Enter Down Payment Amount</label>
+                    <input type="number" class="form-control" id="downPaymentAmount" placeholder="Enter amount"
+                      required>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Niel-Atelier</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://bootstrapmade.com/">TeamKapanggal</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
